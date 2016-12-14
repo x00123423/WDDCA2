@@ -1,0 +1,27 @@
+<div class="tempCalculator">
+  <div class="temp">
+    <h2>Temperature Unit Convertor</h2>
+    <div class="row">
+      <div class="col-sm-7">
+        <label for="celcius">Celcius</label>
+        <input [(ngModel)]="celcius" (click)="checkId('c')" class="form-control" id="celcius" placeholder="Enter a number">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-7">
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input [(ngModel)]="fahrenheit" (click)="checkId('f')" class="form-control" id="fahrenheit" placeholder="Enter a number">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 button">
+          <button type="submit" class="btn btn-primary" (click)="converts()">convert</button>
+      </div>
+    </div>
+    <h3>Total conversion: {{count}}</h3>
+  </div>
+</div>
+
+ 
